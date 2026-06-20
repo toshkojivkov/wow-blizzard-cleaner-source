@@ -6,7 +6,7 @@ The project is aimed at users who want a clear, guided way to remove old local t
 
 The application follows a review-first workflow: scanning does not delete anything. Detected items are shown in a table, the user chooses what to clean, backups are created, and deletion requires confirmation.
 
-## What It Does
+## What It Does     
 
 - Finds local WoW, Blizzard, and Battle.net registry entries from allowlisted locations.
 - Finds local WoW, Blizzard, and Battle.net files/folders from allowlisted paths.
