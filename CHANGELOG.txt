@@ -1,0 +1,53 @@
+WoW Blizzard Cleaner - Changelog
+
+2026-06-19
+
+Added and working:
+- Ban Wave Check now reports last-hour keyword counts per supported public source.
+- Added rate-limit handling and retry logic for public source checks.
+- Added Reddit sources:
+  - r/wow
+  - r/classicwow
+  - r/woweconomy
+  - r/wowclassic
+  - r/worldofwarcraft
+- Added Blizzard Official WoW Forums public search.
+- Ban Wave Check now separates checked public sources from skipped/unsupported sources.
+- Unsupported sources are shown with a clear reason instead of fake counts.
+
+Changed:
+- Removed the old CHANGELOG_README_ENG.md file.
+- This changelog only lists features that were actually implemented and build-tested.
+
+2026-06-19
+
+Added and working:
+- The main window and tray icon now load the embedded application icon from AppIcon.ico when the external icon file is not present in the release folder.
+- AppIcon.ico was regenerated as a multi-size icon with 16, 24, 32, 48, 64, 128, and 256 pixel entries for proper taskbar/tray rendering.
+- AppIcon.ico is now always copied to build and publish output folders.
+
+Changed:
+- Removed RELEASE_README_ENG.txt from the project and release folders.
+- Tray menu Auto-Clean item now displays Auto-Clean: ON or Auto-Clean: OFF and updates when toggled.
+
+2026-06-19
+
+Fixed:
+- Auto-Clean no longer detects WoWCleaner.exe as a WoW process.
+- Auto-Clean now uses a stricter WoW process filter instead of a broad "wow" text match.
+
+Added and working:
+- Auto-Clean now has a 30-second debounce countdown after WoW closes.
+- Auto-Clean cancels the countdown if WoW starts again before cleanup begins.
+- Auto-Clean now has a 5-minute cooldown after an automatic run to prevent repeated prompts.
+- Auto-Clean shows tray notifications when enabled, disabled, scheduled, cancelled, or started.
+- Auto-Clean brings the main window back before showing the cleanup confirmation.
+
+2026-06-19
+
+Fixed:
+- Progress percentage and ETA are now visible above the progress bar.
+- Progress percentage and ETA are also shown in the footer, so they remain visible on every tab.
+- Footer status now follows the current operation instead of staying static.
+- Cancelled scans no longer force the progress bar to 100%.
+- Restore operations now also show simulated progress and ETA.
