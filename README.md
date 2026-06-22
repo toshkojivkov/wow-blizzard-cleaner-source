@@ -1,4 +1,4 @@
-# WoW Blizzard Cleaner Source Codde
+# WoW Blizzard Cleaner - Source Code
 
 WoW Blizzard Cleaner is a Windows Forms desktop utility for reviewing and safely cleaning local World of Warcraft, Blizzard, Battle.net, cache, log, and configuration leftovers from a Windows PC.
 
